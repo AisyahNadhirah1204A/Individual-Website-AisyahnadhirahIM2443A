@@ -1,0 +1,301 @@
+.menu-bar {
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li {
+    width: 135.5px;
+    margin: 9px;
+    padding: 9px;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(119, 119, 119);
+}
+.menu-bar ul li:hover {
+    background-color: rgb(252, 188, 92);
+    border-radius: 2px;
+}
+hr {
+    color: rgb(119, 119, 119);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+ 
+  
+  header {
+    background-color: rgb(252, 188, 92);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+.column {
+    float: left;
+    padding: 9px;
+  }
+  
+  
+  .column.side {
+    width: 25%;
+  }
+  
+  
+  .column.middle {
+    width: 75%;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  
+  h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    color: rgb(3, 3, 3);
+    margin-top: 7px;
+    text-indent: 30px;
+    line-height: 1.7;
+    border: 1px solid rgb(253, 253, 253);
+    padding: 7px;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: aliceblue;
+  font-size: 22px;
+  margin-left: 25px;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(3, 3, 3);
+}
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  text-decoration: white;
+  text-align: center;
+}
+
+nav {
+  float: left;
+  width: 90%;
+  height: 28cm;
+  background: rgb(119, 119, 119);
+  padding: 20px;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image1 {
+  margin-left: 130px;
+}
+
+.image2 {
+  margin-left: 70px;
+}
+
+.image3 {
+  margin-left: 70px;
+}
+
+.image4 {
+  margin-left: 6px;
+}
+
+.image5 {
+  margin-left: 70px;
+}
+
+.image6 {
+  margin-left: 125px;
+}
+
+.image7 {
+  margin-left: 125px;
+}
+
+.image8 {
+  margin-left: 40px;
+}
+
+footer {
+  background-color: rgb(119, 119, 119);
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  color: ghostwhite;
+}
+.image9 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.image10 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.image11 {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 98%;
+}
+
+.image12 {
+  margin-left: 25px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  height: 100%;
+  
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: rgb(252, 200, 124);
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(255, 207, 134);
+  color: white;
+}
+
+.card {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.title {
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  text-decoration: blanchedalmond;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+p {
+color: black;
+}
+
+.div1 {
+    margin-left: 80px;
+    background: rgb(205, 207, 205);
+    float: left;
+    padding: 15px;
+    width: 8cm;
+    height: 10cm;
+  }
+  
+  .div2 {
+    background: rgb(205, 207, 205);
+    float: left;
+    margin-left: 40px;
+    padding: 15px;
+    width: 8cm;
+    height: 10cm;
+
+  }
+  
+  .div3 {
+    background: rgb(205, 207, 205);
+    float: left;
+    padding: 15px;
+    margin-left: 40px;
+    width: 8cm;
+    height: 10cm;
+  }
+
+  .image1 {
+    margin-left: 1.1cm;
+ 
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+    border: 1px solid #ddd;
+    margin-left: 80px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }

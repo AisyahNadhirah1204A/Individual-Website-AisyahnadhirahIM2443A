@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+</head>
+<style>
+  .menu-bar {
+    background: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+  }
+  .menu-bar ul li {
+    width: 135.5px;
+    margin: 9px;
+    padding: 9px;
+  }
+  .menu-bar ul li a {
+    text-decoration: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(119, 119, 119);
+  }
+  .menu-bar ul li:hover {
+    background-color: rgb(252, 188, 92);
+    border-radius: 2px;
+  }
+  hr {
+      color: rgb(119, 119, 119);
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+ 
+  
+  header {
+    background-color: rgb(252, 188, 92);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+.column {
+    float: left;
+    padding: 9px;
+  }
+  
+  
+  .column.side {
+    width: 30%;
+  }
+  
+  
+  .column.middle {
+    margin-top: 0.2cm;
+    width: 70%;
+    background-color: rgb(235, 235, 235);
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  
+  h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    color: rgb(3, 3, 3);
+    margin-top: 7px;
+    text-indent: 30px;
+    line-height: 1.7;
+    border: 1px solid rgb(253, 253, 253);
+    padding: 7px;
+}
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: aliceblue;
+  font-size: 22px;
+  margin-left: 25px;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(3, 3, 3);
+}
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  text-decoration: white;
+}
+
+nav {
+  float: left;
+  width: 90%;
+  height: 12cm;
+  background: rgb(119, 119, 119);
+  padding: 20px;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;;
+}
+
+.image1 {
+  margin-top: 0.5cm;
+  margin-left: 415px;
+}
+
+
+.image4 {
+  margin-left: 290px;
+}
+
+.image5 {
+  margin-left: 6px;
+}
+
+
+footer {
+  background-color: rgb(119, 119, 119);
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  color: ghostwhite;
+}
+.image9 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.image10 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.image11 {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 98%;
+}
+
+
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  height: 100%;
+  
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: rgb(252, 200, 124);
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(255, 207, 134);
+  color: white;
+}
+
+
+p {
+color: black;
+}
+
+  </style>
+<body>
+    <div class="menu-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About me.html">About me</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Skills.html">Skills</a></li>
+          <li><a href="Experiences.html">Experiences</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="Work Galleries.html">Work Galleries</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <hr>
+      <header>
+        <h2>My Skills</h2>
+      </header>
+      <br>
+      <div class="row">
+        <div class="column side">
+          <div class="sidebar">
+          <nav>
+          <h4>Jump to :</h4>
+          <section>
+              <h6>
+              <ul>
+                <li><a class="active" href="#Ex1">Software editing</a></li>
+                <li><a href="#Ex2">Video editing</a></li>
+                <li><a href="#Ex3">Drawing/sketching</a></li>
+                <li><a href="#Ex4">Leadership</a></li>
+                <li><a href="#Ex5">Communication</a></li>
+                <li><a href="#Ex6">Languages</a></li>
+              </ul>
+              </h6>
+            </nav>
+            </div>
+          </section>
+        </div>
+        
+        <div class="column middle">
+          <h3>My skills</h3>
+
+          <section>
+            <article class = “post1”>
+            <h3 id="Ex1">1) Software editing</h3>
+            <img src="Skills Gallery/Softwares.gif" class="image1" alt="Softwares" style="width:200px;height:160px;">
+            <p><h5>I can use various software editing such as image editing, creating magazines, create a filters, Word processing software and many more. The softwares that 
+              i can use are, Adobe illustrations, Adobe photoshop, Adobe lightroom, Adobe Indesign, Microsoft Word, Microsoft Powerpoint, Microsoft Excel, Canva, PicsArt and many more.
+              I am not expert in useing all of these softwares but i have a basic on how to use it because i had used all of these in my diploma and for works. 
+            </h5></p>
+            </article>
+           
+
+            <article class = “post2”>
+            <h3 id="Ex2">2) Video editing</h3>
+              <p><h5>I can also use various video editing software whereby this part is more to editing the video. The softwares that I usually used are, Adobe Premier
+                Pro, Adobe After Effects, Filmorago, Capcut, Vivavideo, VN, Inshot and many more. I used all of these softwares for my presentation video, tasks, Works during
+                internship whereby i need to edit the organization video and many more. 
+              </h5></p>
+            </article>
+
+            <article class = “post3”>
+            <h3 id="Ex3">3) Drawing/sketching</h3>
+              <img src="Skills Gallery/Drawing1.jpg" class="image4"  alt="Drawing Competition" width="230" height="200" title="Drawing experience">
+              <img src="Skills Gallery/Drawing2.jpg" class="image5"  alt="Drawing Competition" width="260" height="200" title="Drawing experience">
+              <p><h5>As you know, I really loves drawing so I have skills in sketching, drawing, painting. It is because i started drawing when i was 5 years old. 
+                I really love drawing so i draw everyday to sharp my skills. I can also use my imagination in drawing. Basically, I am more to sketching potrait, 
+              Architecture drawing, and all things that used pen and pencils. Meanwhile, for the water colour is just a minor for me. </h5></p>
+            </article>
+
+            <article class = “post4”>
+            <h3 id="Ex4">4) Leadership</h3>
+            <p><h5>I have the skill in leadership because I learnt so many things during my diploma. I learnt to arrange and manage by myself. In my diploma, I 
+              handled all of group things and hold a programs in Komander. I can also speak and present in front of audience confidently. I am the one who need
+              to manage everything and if not, i will not be able to sit still. As the short story, I also is the minor perfectionist.
+            </h5></p>
+            </article>
+
+            <article class = “post5”>
+            <h3 id="Ex5">5) Communication</h3>
+              <p><h5> I can communicate with many peoples and audience with confident which i know on how to know people's condition based on the logic skills. My communication skill
+                is about 60% for overall. 
+              </h5></p>
+            </article>
+
+            <article class = “post4”>
+              <h3 id="Ex6">6) Languages</h3> 
+              <p><h5>I have three languages skills which are Malay, English and Mandarin (basic). It is because i learnt them in my studies and be able to understand 
+                what people want to deliver. For Malay, I am in about 90%, English 70% and mandarin 30%. </h5></p>
+              </article>
+
+            </section>
+            
+        </div>
+      </div>
+
+      <br><br>
+      <footer>
+          <br><br>
+          <p style="color: white;">Copyright &copy:2021 IMS456 aisyahnadhirahanuar</p>
+          <p style="color: white;">For more information:</p>
+          <p style="color: white;">You can contact me through <a href="mailto:aisyahnadhirahanuar@gmail.com">@aisyahnadhirahanuar</a> </p>
+          
+                   <a href="https://www.facebook.com/aisyah.nadhirahanuar/">
+                   <img src="About me Gallery/ICON1.png" class="image9" alt="Facebook" style="width:42px;height:42px;">
+                   </a>
+         
+                    <a href="https://www.instagram.com/aisyahndrhh/">
+                    <img src="About me Gallery/ICON2.png" class="image10" alt="Instagram" style="width:42px;height:42px;"></a>
+             
+                    <a href="https://twitter.com/aisyahaanuar">
+                    <img src="About me Gallery/ICON3.png" class="image11" alt="twitter" style="width:40px;height:40px;"></a>
+
+    </footer>
+</body>
+</html>

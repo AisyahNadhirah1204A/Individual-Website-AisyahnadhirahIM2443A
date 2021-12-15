@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Work Galleries.css"/>
+    <title>Work Galleries</title>
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About me.html">About me</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Skills.html">Skills</a></li>
+          <li><a href="Experiences.html">Experiences</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+          <li><a href="Work Galleries.html">Work Galleries</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <hr>
+      <header>
+        <h2>My Artworks Galleries</h2>
+      </header>
+      <br><br>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Drawings')"> Drawings </button>
+  <button class="btn" onclick="filterSelection('Software')"> Software </button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<div class="row">
+  <div class="column Drawings">
+    <div class="content">
+      <img src="Work Art Gallery/Work1.jpg" alt="Draws" style="width:80%">
+      <h4>Drawings form 3</h4>
+      <h4><p>All of these were drawn in 2016, in secondary school.</p></h4>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="Work Art Gallery/Work2.jpg" alt="Faces Potrait" style="width:88%">
+      <h4>Face Potrait</h4>
+      <h4><p>Drawn in 2021, April. </p></h4>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="Work Art Gallery/Work3.jpg" alt="Eyes" style="width:90%">
+      <h4>Eyes drawing</h4>
+      <h4><p>Drawn in 2019, March.</p></h4>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="Work Art Gallery/Work4.jpg" alt="Mira Filzah" style="width:83%">
+      <h4>Mira Filzah face's potrait</h4>
+      <h4><p>Drawn in 2020, December.</p></h4>
+    </div>
+  </div>
+  <div class="column Drawings">
+    <div class="content">
+      <img src="Work Art Gallery/Work5.jpg" alt="Leaf" style="width:100%">
+      <h4>Leaf drawing</h4>
+      <h4><p>Drawn in 2017, March for education purpose.</p></h4>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="Work Art Gallery/Work6.jpg" alt="Taylor Swift Face Drawing" style="width:87%">
+      <h4>Taylor Swift's Face Drawing</h4>
+      <h4><p>Drawn in 2020, November.</p></h4>
+    </div>
+  </div>
+  <div class="column Software">
+    <div class="content">
+      <img src="Work Art Gallery/ai skills.jpg" alt="Adobe Illustrator work" style="width:80%">
+      <h4>Adobe Illustrator's work</h4>
+      <h4><p>All drawn by myself, the icon and the detais is by me.</p></h4>
+    </div>
+  </div>
+  <div class="column Software">
+    <div class="content">
+      <img src="Work Art Gallery/experience (2).jpg" alt="Canva work" style="width:73.4%">
+      <h4>Canva's work</h4>
+      <h4><p>Internship virtual exhibition.</p></h4>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <br><br>
+  <p>Copyright &copy:2021 IMS456 aisyahnadhirahanuar</p>
+  <p>For more information:</p>
+  <p>You can contact me through <a href="mailto:aisyahnadhirahanuar@gmail.com">@aisyahnadhirahanuar</a> </p>
+  
+           <a href="https://www.facebook.com/aisyah.nadhirahanuar/">
+           <img src="About me Gallery/ICON1.png" class="image2" alt="Facebook" style="width:42px;height:42px;">
+           </a>
+ 
+            <a href="https://www.instagram.com/aisyahndrhh/">
+            <img src="About me Gallery/ICON2.png" class="image1" alt="Instagram" style="width:42px;height:42px;"></a>
+     
+            <a href="https://twitter.com/aisyahaanuar">
+            <img src="About me Gallery/ICON3.png" class="image3" alt="twitter" style="width:40px;height:40px;"></a>
+
+</footer>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</body>
+</html>
